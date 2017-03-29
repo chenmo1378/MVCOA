@@ -1,0 +1,186 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>权限</title>
+    <link href="~/EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="~/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#winPers').window('close');
+            $("#tbList").datagrid({
+                width: 'auto',
+                height: 'auto',
+                fitColumns:true,
+                striped: true,
+                singleSelect: true,
+                url: '/admin/role/Index',
+                loadMsg: '数据加载中请稍后……',
+                pagination: true,//启用分页，默认每页10行
+                rownumbers: true,//显示页码，默认 提供 10 - 50 的页容量选择下拉框
+                pageSize: 2,//设置 页容量为 5
+                pageList:[2,5,10],//设置 页容量下拉框
+                columns: [[
+                    {
+                        field: 'rIsShow', title: '显示', width: 20, formatter: function (value) {
+                            return value ? "√" : "X";
+                        }
+                    },
+                    { field: 'rId', title: 'ID', width: 100 },
+                    {
+                        field: 'Ou_Department', title: '部门', width: 100, formatter: function (value) {
+                            return value.depName;
+                        }
+                    },
+                    { field: 'rName', title: '角色名', width: 100 },
+                    { field: 'rRemark', title: '备注', width: 100 }
+                ]],
+                toolbar: [ {
+                    iconCls: 'icon-add',
+                    text: "新增",
+                    handler: addRow
+                }, '-', {
+                    iconCls: 'icon-remove',
+                    text: "删除",
+                    handler: removeRow
+                }, '-',{
+                    iconCls: 'icon-edit',
+                    text: "编辑",
+                    handler: editRow
+                }, '-', {
+                    iconCls: 'icon-search',
+                    text: "分配权限",
+                    handler: providePermission
+                }],
+                onSelect: function (rowI, rowD) {
+                    selectedRowIndex = rowI;//将选中行的下标 设置给全局变量
+                },
+                onDblClickRow: function () {
+                    editRow();
+                }
+            });
+        })
+
+        //选中行的下标
+        var selectedRowIndex = -1;
+
+        //编辑按钮方法
+        function editRow()
+        {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $('#editWindow').window('open');
+                //异步请求 权限修改页面，并直接加载到 当前的 修改窗体中
+                //$("#editWindow").load("/admin/sys/editpermission/" + rowData.pid, function (jsonData) {
+                //    alert("加载~！" + jsonData.Statu);
+                //});
+                $.get("/admin/sys/editpermission/" + rowData.pid, null, function (jsonObj) {
+                    if (jsonObj.Statu)
+                        $.procAjaxData(jsonObj);
+                    else
+                        $("#editWindow").html(jsonObj);
+                    
+                });
+            }
+        }
+
+        //新增按钮方法
+        function addRow()
+        {
+            $('#editWindow').window('open');
+            //$("#editWindow").load("/admin/sys/addpermission/");
+            $.get("/admin/sys/addpermission/", null, function (jsonObj) {
+                if (jsonObj.Statu)
+                    $.procAjaxData(jsonObj);
+                else
+                    $("#editWindow").html(jsonObj);
+
+            });
+        }
+
+        //删除方法
+        function removeRow()
+        {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $.post("/admin/sys/delpemission", "id=" + rowData.pid, function (jsonObj) {
+                    $.procAjaxData(jsonObj, function () {
+                        $("#tbList").datagrid("reload");//删除成功后 刷新页面
+                    });
+                },"JSON");
+            }
+        }
+
+        //加载权限树
+        function providePermission() {
+            //获取选中 的 角色数据
+            var roleData = $("#tbList").datagrid("getSelected");
+            if (roleData) {
+                $.get("/admin/role/getRoleTree/" + roleData.rId, null, function (jsonObj) {
+                    if (jsonObj.Statu)
+                        $.procAjaxData(jsonObj);
+                    else
+                        $("#treeArea").html(jsonObj);
+
+                });
+            } else {
+                $.alertMsg("请选中要分配权限的角色~~", "系统提示");
+            }
+            $("#winPers").window("open");
+        }
+        
+        function SaveNewPermission()
+        {
+            var nodeIds = "";
+            //1.获取所有的树
+            var $trees = $("#treeArea > ul");
+            //2.遍历所有树
+            for (var i = 0; i < $trees.length; i++) {
+                //3.获取每颗树里的 选中的节点
+                var nodes = $($trees[i]).tree("getChecked");
+                //3.1获取每颗树里 不确定的节点（子节点有被选中的父节点 就是 不确定节点）
+                var nodes2 = $($trees[i]).tree('getChecked', 'indeterminate');
+                //3.2将两个节点数组合并
+                nodes = nodes.concat(nodes2);
+                //4.遍历节点
+                for (var j = 0; j < nodes.length; j++)
+                {
+                    nodeIds += nodes[j].id+ ",";
+                }
+            }
+            //-------------------------------------
+            //提交要修改的角色新的权限
+            var roleId = $("#roleId").val();//获取要修改的角色id
+            $.post("/admin/role/SetRolePer", { rid: roleId, roleids: nodeIds }, function (jsonObj) {
+                $("#winPers").window("close");
+                $.procAjaxData(jsonObj);
+            });
+        }
+    </script>
+</head>
+<body>
+    <table id="tbList" style="width:400px;height:250px">
+    </table>
+    
+    <div id="winPers" class="easyui-window" title="分配权限" style="width:600px; height:300px;"   
+        data-options="iconCls:'icon-save',modal:true">
+        <div class="easyui-layout" data-options="fit:true">
+			<div id="treeArea" data-options="region:'center'" style="padding:10px;">
+				
+			</div>
+			<div data-options="region:'south',border:false" style="text-align:right;padding:5px;">
+				<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="SaveNewPermission()">保存</a>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

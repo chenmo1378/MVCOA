@@ -1,0 +1,10 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\Common\bin\Debug\Common.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\Common\bin\Debug\Common.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\Common\obj\Debug\Common.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\Common\obj\Debug\Common.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\Common\bin\Debug\Common.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\Common\bin\Debug\Common.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\Common\obj\Debug\Common.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\Common\obj\Debug\Common.pdb

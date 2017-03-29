@@ -1,0 +1,17 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\IDAL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\IDAL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\obj\Debug\IDAL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\IDAL\obj\Debug\IDAL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\IDAL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\IDAL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\IDAL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\IDAL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\IDAL\obj\Debug\IDAL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\IDAL\obj\Debug\IDAL.pdb

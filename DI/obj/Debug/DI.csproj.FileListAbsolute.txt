@@ -1,0 +1,14 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\bin\Debug\DI.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\bin\Debug\DI.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\obj\Debug\DI.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\obj\Debug\DI.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\bin\Debug\Common.Logging.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\bin\Debug\Spring.Core.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DI\obj\Debug\DI.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\bin\Debug\DI.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\bin\Debug\DI.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\bin\Debug\Common.Logging.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\bin\Debug\Spring.Core.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\obj\Debug\DI.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\obj\Debug\DI.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DI\obj\Debug\DI.pdb

@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="~/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+    @*@Scripts.Render("~/easyUIJS")*@
+    <script type="text/javascript">
+        $(function () {
+            //$("#tbs").tabs({
+            //    tools: [{
+            //        iconCls: 'icon-add',
+            //        handler: function () {
+            //            alert('添加')
+            //        }
+            //    }, {
+            //        iconCls: 'icon-save',
+            //        handler: function () {
+            //            alert('保存')
+            //        }
+            //    }]
+            //});
+
+            //1.加载菜单树
+            $("#menuTree").tree({
+                url: '/admin/admin/getMenuData', onLoadSuccess: function (node, data) {
+                    //调用方法 统一处理 Ajax获取的 json数据！
+                    $.procAjaxData(data);
+                },
+                onClick: function (node) {
+                    newTab(node);
+                },animate:true
+            });
+        })
+        //追加一个新的 Tab
+        function newTab(treeNode)
+        {
+            var $tbs = $("#tbs");//获取tab容器
+            //新根据 标题 判断 是否以存在 同名tab
+            if ($tbs.tabs("exists", treeNode.text)) {
+                //判断正在看的选项卡 是否 和 被点击的树节点 要打开的选项卡 相同
+                //1.获取 当前选项卡
+                var currTab = $tbs.tabs('getSelected');
+                //1.1获取当前选项卡的 标题
+                var currTitle = currTab.panel('options').title
+                //2.拿当前标题 和 被点击的 树节点标题比较，如果相等，则要刷新
+                if (currTitle == treeNode.text) {
+                    $tbs.tabs('update', {
+                        tab: currTab,//要更新的标签
+                        options: {//设置更新标签要修改的属性
+                            content: newIframe(treeNode.attributes.url)//重新加载iframe
+                        }
+                    });
+                }
+
+                $tbs.tabs("select", treeNode.text);
+            } else {
+                $tbs.tabs("add", {
+                    title: treeNode.text,
+                    content: newIframe(treeNode.attributes.url),
+                    closable: true,
+                    fit:true
+                });
+            }
+        }
+        /*返回一个iframe标签*/
+        function newIframe(url)
+        {
+            var ifrStr = "<iframe src='" + url + "' style='width:99.5%;height:99%;border:0px solid #000;'></iframe>";
+            return ifrStr;
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'north',split:true" style="height:70px; font-size:32px;">
+        OA权限管理系统
+    </div>
+    <div data-options="region:'west',title:'菜单导航',split:true" style="width:210px;">
+        <ul id="menuTree"></ul>
+    </div>
+    <div data-options="region:'center'" style="padding:5px;background:#eee;">
+        <div id="tbs" class="easyui-tabs" data-options="fit:true,border:false">
+        </div>
+    </div>
+</body>  
+</html>

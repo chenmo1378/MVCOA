@@ -1,0 +1,60 @@
+﻿@model MODEL.ViewModel.LoginUser
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <style type="text/css">
+        #divMsg {
+            display: none;
+            /*visibility:hidden;*/
+        }
+    </style>
+
+    @Scripts.Render("~/mvcAjax")
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+    <script type="text/javascript">
+        function Success(jsonData)
+        {
+            $.procAjaxData(jsonData, function () {
+                if (window.top) { window.top.location = jsonData.BackUrl; } else {
+                    window.location = jsonData.BackUrl;
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    @using (Ajax.BeginForm(new AjaxOptions() {
+        HttpMethod = "post",
+        OnSuccess = "Success",
+        LoadingElementId = "divMsg"
+    }))
+    {
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td>@Html.TextBoxFor(u => u.LoginName, new { Value="admin" })</td>
+                <td>@Html.ValidationMessageFor(u=>u.LoginName)</td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td>@Html.PasswordFor(u => u.Pwd, new { value="123123" })</td>
+                <td>@Html.ValidationMessageFor(u=>u.Pwd)</td>
+            </tr>
+            <tr>
+                <td>@Html.CheckBoxFor(u=> u.IsAlways)</td>
+                <td colspan="2"><input type="submit" value="登陆" /></td>
+            </tr>
+        </table>
+        
+        
+        
+    }
+    <div id="divMsg">加载中~~~</div>
+</body>
+</html>

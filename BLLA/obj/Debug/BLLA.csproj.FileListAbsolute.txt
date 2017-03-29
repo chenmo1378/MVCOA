@@ -1,0 +1,25 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\BLLA.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\BLLA.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\DI.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\IBLL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\IDAL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\DI.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\IBLL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\IDAL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\obj\Debug\BLLA.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\obj\Debug\BLLA.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\obj\Debug\BLLA.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\Common.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\BLLA\bin\Debug\Common.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\BLLA.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\BLLA.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\BLLA.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\BLLA.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\BLLA\obj\Debug\BLLA.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\BLLA\obj\Debug\BLLA.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\BLLA\obj\Debug\BLLA.pdb

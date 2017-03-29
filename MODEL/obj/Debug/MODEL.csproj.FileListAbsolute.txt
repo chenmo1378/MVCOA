@@ -1,0 +1,17 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\obj\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\obj\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MODEL\bin\Debug\MODEL.dll.config
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\bin\Debug\MODEL.dll.config
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\bin\Debug\MODEL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\bin\Debug\MODEL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\bin\Debug\EntityFramework.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\obj\Debug\MODEL.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\obj\Debug\MODEL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MODEL\obj\Debug\MODEL.pdb

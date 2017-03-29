@@ -1,0 +1,178 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>权限</title>
+    <link href="~/EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="~/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    @* 自动为表单 添加验证功能的js文件 -- 微软提供
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    *@
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#editWindow').window('close');
+            $("#tbList").datagrid({
+                width: 'auto',
+                height: 'auto',
+                fitColumns:true,
+                striped: true,
+                singleSelect: true,
+                url: '/admin/sys/GetPermData',
+                //queryParams:{},
+                loadMsg: '数据加载中请稍后……',
+                pagination: true,//启用分页，默认每页10行
+                rownumbers: true,//显示页码，默认 提供 10 - 50 的页容量选择下拉框
+                pageSize: 5,//设置 页容量为 5
+                pageList:[5,10],//设置 页容量下拉框
+                columns: [[
+                    {
+                        field: 'pIsShow', title: '显示', width: 20, formatter: function (value) {
+                            return value ? "√" : "X";
+                        }
+                    },
+                    { field: 'pName', title: '权限名', width: 100 },
+                    { field: 'pAreaName', title: '区域名', width: 100 },
+                    { field: 'pControllerName', title: '控制名', width: 100 },
+                    { field: 'pActionName', title: 'Action', width: 100 },
+                    {
+                        field: 'pFormMethod', title: '请求方式', width: 100, align: "center",
+                        formatter: function (value) {
+                            switch (value.toString())
+                            {
+                                case "1":
+                                    return "Get";
+                                case "2":
+                                    return "Post";
+                                case "3":
+                                    return "Both";
+                            }
+                        }
+                    },
+                    {
+                        field: 'pOperationType', title: '操作类型', width: 100,
+                        formatter: function (value) {
+                            switch (value.toString()) {
+                                case "0":
+                                    return "无操作";
+                                case "1":
+                                    return "easyui连接";
+                                case "2":
+                                    return "打开新窗体";
+                            }
+                        }
+                    },
+                    { field: 'pOrder', title: '序号', width: 100 }
+                ]],
+                toolbar: [ {
+                    iconCls: 'icon-add',
+                    text: "新增",
+                    handler: addRow
+                }, '-', {
+                    iconCls: 'icon-remove',
+                    text: "删除",
+                    handler: removeRow
+                }, '-',{
+                    iconCls: 'icon-edit',
+                    text: "编辑",
+                    handler: editRow
+                }, '-', {
+                    iconCls: 'icon-search',
+                    text: "查看子权限",
+                    handler: viewSon
+                }],
+                onSelect: function (rowI, rowD) {
+                    selectedRowIndex = rowI;//将选中行的下标 设置给全局变量
+                },
+                onDblClickRow: function () {
+                    editRow();
+                }
+            });
+        })
+
+        //选中行的下标
+        var selectedRowIndex = -1;
+
+        //编辑按钮方法
+        function editRow()
+        {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $('#editWindow').window('open');
+                //异步请求 权限修改页面，并直接加载到 当前的 修改窗体中
+                //$("#editWindow").load("/admin/sys/editpermission/" + rowData.pid, function (jsonData) {
+                //    alert("加载~！" + jsonData.Statu);
+                //});
+                $.get("/admin/sys/editpermission/" + rowData.pid, null, function (jsonObj) {
+                    if (jsonObj.Statu)
+                        $.procAjaxData(jsonObj);
+                    else
+                        $("#editWindow").html(jsonObj);
+                    
+                });
+            }
+        }
+
+        //新增按钮方法
+        function addRow()
+        {
+            $('#editWindow').window('open');
+            //$("#editWindow").load("/admin/sys/addpermission/");
+            $.get("/admin/sys/addpermission/", null, function (jsonObj) {
+                if (jsonObj.Statu)
+                    $.procAjaxData(jsonObj);
+                else
+                    $("#editWindow").html(jsonObj);
+
+            });
+        }
+
+        //删除方法
+        function removeRow()
+        {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $.post("/admin/sys/delpemission", "id=" + rowData.pid, function (jsonObj) {
+                    $.procAjaxData(jsonObj, function () {
+                        $("#tbList").datagrid("reload");//删除成功后 刷新页面
+                    });
+                },"JSON");
+            }
+        }
+        //查看子权限
+        function viewSon() {
+            var rowData = $("#tbList").datagrid("getSelected");
+            window.location = "/admin/sys/PermissionSon?pid=" + rowData.pid;
+        }
+        // submit the form    
+        //$('#ff').submit();  
+    </script>
+</head>
+<body>
+    <table id="tbList" style="width:400px;height:250px">
+    </table>
+    
+    <div id="editWindow" class="easyui-window" title="My Window" style="width:600px;height:400px;"   
+        data-options="iconCls:'icon-save',modal:true">
+       
+    </div>
+</body>
+</html>
+<!--
+            ////获取所有选中行 的数据
+            //var $selectedRows = $("#tbList").datagrid("getSelections");
+
+            ////获取选中行的下标
+            ////alert(selectedRowIndex);
+            ////$("#tbList").datagrid("selectRow", 7);
+
+            ////想获取 选中行的 对象，没想到办法！
+-->

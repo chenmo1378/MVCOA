@@ -1,0 +1,26 @@
+﻿@model MODEL.ViewModel.RolePemissionTree
+
+<script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+<input type="hidden" value="@ViewBag.roleId" id="roleId" />
+@*1.循环所有父菜单，为每个父菜单生成一棵树*@
+@for (int i = 0; i < Model.AllParentPer.Count;i++ )
+{
+    var parent = Model.AllParentPer[i];
+    <ul id="tt@(i)" class="easyui-tree" style="display:inline-table;margin:5px;" data-options="checkbox:true,lines:true,cascadeCheck:false">
+        <li data-options="id:@parent.pid@if(Model.UserPer.Where(uPer => uPer.pid == parent.pid).Count() > 0){
+                        <text>,checked:true</text>}">
+            <span>@parent.pName</span>
+            <ul>
+            @*2.生成子菜单，从所有菜单集合中 查出 属于当前循环 父菜单 的子菜单*@ 
+            @foreach (var son in Model.AllPer.Where(p => p.pParent == parent.pid).ToList())
+            {
+                @*3.如果 当前子菜单 和 用户菜单一样，则需设置为选中状态*@
+                <li data-options="id:@son.pid@if(Model.UserPer.Where(uPer=>uPer.pid==son.pid).Count()>0){
+                        <text>,checked:true</text>}">
+                    <span><a href="#">@son.pName</a></span>
+                </li>
+            }
+           </ul>
+        </li>
+    </ul>
+}

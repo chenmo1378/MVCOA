@@ -1,0 +1,16 @@
+﻿@model List<MODEL.Ou_Permission>
+@{
+    ViewBag.Title = "Index";
+}
+测试页面~~~~~~~~~~~~~~~~~~~~~！负责显示 所有 权限
+<table>
+    <tr>
+        <td>权限名称</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.pName</td>
+        </tr>
+    }
+</table>

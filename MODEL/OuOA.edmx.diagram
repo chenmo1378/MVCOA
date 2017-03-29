@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a4554313552045e897008836a61634fc" Name="关系图1">
+        <EntityTypeShape EntityType="MODEL.Bill_Leave" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_Department" Width="2" PointX="5.125" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_Permission" Width="1.5" PointX="8" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_Role" Width="1.5" PointX="8" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_RolePermission" Width="1.5" PointX="10.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_UserInfo" Width="1.5" PointX="8" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_UserRole" Width="1.5" PointX="10.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.Ou_UserVipPermission" Width="1.5" PointX="13.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_AutoTransactNode" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_BillFlowNode" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_BillFlowNodeRemark" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_BillState" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_Node" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_NodeState" Width="1.5" PointX="3.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_WorkFlow" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MODEL.WF_WorkFlowNode" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MODEL.FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_Role_Ou_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_UserInfo_Ou_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_RolePermission_Ou_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_UserVipPermission_Ou_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_RolePermission_Ou_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_UserRole_Ou_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_UserRole_Ou_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_UserVipPermission_Ou_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW" ManuallyRouted="false" />
+        <AssociationConnector Association="MODEL.FK_Ou_Department_Ou_Department" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

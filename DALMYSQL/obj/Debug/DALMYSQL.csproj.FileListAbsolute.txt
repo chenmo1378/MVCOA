@@ -1,0 +1,19 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\DALMYSQL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\DALMYSQL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\IDAL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\IDAL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\DALMYSQL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\DALMYSQL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\DALMYSQL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\DALMYSQL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\DALMYSQL\obj\Debug\DALMYSQL.pdb

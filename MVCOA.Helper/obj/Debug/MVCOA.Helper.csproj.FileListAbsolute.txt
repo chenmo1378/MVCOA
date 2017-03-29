@@ -1,0 +1,36 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\MVCOA.Helper.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\MVCOA.Helper.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\DI.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\IBLL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\Spring.Core.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\Common.Logging.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\DI.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\IBLL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\Common.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Helper\bin\Debug\Common.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\MVCOA.Helper.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\MVCOA.Helper.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\Common.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\DI.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\IBLL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\MODEL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\Spring.Core.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\EntityFramework.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\Common.Logging.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\Common.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\DI.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\IBLL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\MODEL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\EntityFramework.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Helper\obj\Debug\MVCOA.Helper.pdb

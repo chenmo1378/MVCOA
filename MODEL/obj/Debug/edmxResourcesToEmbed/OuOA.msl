@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MODELStoreContainer" CdmEntityContainer="OuOAEntities">
+    <EntitySetMapping Name="Bill_Leave">
+      <EntityTypeMapping TypeName="MODEL.Bill_Leave">
+        <MappingFragment StoreEntitySet="Bill_Leave">
+          <ScalarProperty Name="Leave" ColumnName="Leave" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="BillStateID" ColumnName="BillStateID" />
+          <ScalarProperty Name="WorkFlowID" ColumnName="WorkFlowID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_Department">
+      <EntityTypeMapping TypeName="MODEL.Ou_Department">
+        <MappingFragment StoreEntitySet="Ou_Department">
+          <ScalarProperty Name="depId" ColumnName="depId" />
+          <ScalarProperty Name="depPid" ColumnName="depPid" />
+          <ScalarProperty Name="depName" ColumnName="depName" />
+          <ScalarProperty Name="depRemark" ColumnName="depRemark" />
+          <ScalarProperty Name="depIsDel" ColumnName="depIsDel" />
+          <ScalarProperty Name="depAddTime" ColumnName="depAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_Permission">
+      <EntityTypeMapping TypeName="MODEL.Ou_Permission">
+        <MappingFragment StoreEntitySet="Ou_Permission">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="pParent" ColumnName="pParent" />
+          <ScalarProperty Name="pName" ColumnName="pName" />
+          <ScalarProperty Name="pAreaName" ColumnName="pAreaName" />
+          <ScalarProperty Name="pControllerName" ColumnName="pControllerName" />
+          <ScalarProperty Name="pActionName" ColumnName="pActionName" />
+          <ScalarProperty Name="pFormMethod" ColumnName="pFormMethod" />
+          <ScalarProperty Name="pOperationType" ColumnName="pOperationType" />
+          <ScalarProperty Name="pIco" ColumnName="pIco" />
+          <ScalarProperty Name="pOrder" ColumnName="pOrder" />
+          <ScalarProperty Name="pIsLink" ColumnName="pIsLink" />
+          <ScalarProperty Name="pLinkUrl" ColumnName="pLinkUrl" />
+          <ScalarProperty Name="pIsShow" ColumnName="pIsShow" />
+          <ScalarProperty Name="pRemark" ColumnName="pRemark" />
+          <ScalarProperty Name="pIsDel" ColumnName="pIsDel" />
+          <ScalarProperty Name="pAddTime" ColumnName="pAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_Role">
+      <EntityTypeMapping TypeName="MODEL.Ou_Role">
+        <MappingFragment StoreEntitySet="Ou_Role">
+          <ScalarProperty Name="rId" ColumnName="rId" />
+          <ScalarProperty Name="rDepId" ColumnName="rDepId" />
+          <ScalarProperty Name="rName" ColumnName="rName" />
+          <ScalarProperty Name="rRemark" ColumnName="rRemark" />
+          <ScalarProperty Name="rIsShow" ColumnName="rIsShow" />
+          <ScalarProperty Name="rIsDel" ColumnName="rIsDel" />
+          <ScalarProperty Name="rAddTime" ColumnName="rAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_RolePermission">
+      <EntityTypeMapping TypeName="MODEL.Ou_RolePermission">
+        <MappingFragment StoreEntitySet="Ou_RolePermission">
+          <ScalarProperty Name="rpId" ColumnName="rpId" />
+          <ScalarProperty Name="rpRId" ColumnName="rpRId" />
+          <ScalarProperty Name="rpPId" ColumnName="rpPId" />
+          <ScalarProperty Name="rpIsDel" ColumnName="rpIsDel" />
+          <ScalarProperty Name="rpAddTime" ColumnName="rpAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_UserInfo">
+      <EntityTypeMapping TypeName="MODEL.Ou_UserInfo">
+        <MappingFragment StoreEntitySet="Ou_UserInfo">
+          <ScalarProperty Name="uId" ColumnName="uId" />
+          <ScalarProperty Name="uDepId" ColumnName="uDepId" />
+          <ScalarProperty Name="uLoginName" ColumnName="uLoginName" />
+          <ScalarProperty Name="uPwd" ColumnName="uPwd" />
+          <ScalarProperty Name="uGender" ColumnName="uGender" />
+          <ScalarProperty Name="uPost" ColumnName="uPost" />
+          <ScalarProperty Name="uRemark" ColumnName="uRemark" />
+          <ScalarProperty Name="uIsDel" ColumnName="uIsDel" />
+          <ScalarProperty Name="uAddTime" ColumnName="uAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_UserRole">
+      <EntityTypeMapping TypeName="MODEL.Ou_UserRole">
+        <MappingFragment StoreEntitySet="Ou_UserRole">
+          <ScalarProperty Name="urId" ColumnName="urId" />
+          <ScalarProperty Name="urUId" ColumnName="urUId" />
+          <ScalarProperty Name="urRId" ColumnName="urRId" />
+          <ScalarProperty Name="urIsDel" ColumnName="urIsDel" />
+          <ScalarProperty Name="urAddtime" ColumnName="urAddtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ou_UserVipPermission">
+      <EntityTypeMapping TypeName="MODEL.Ou_UserVipPermission">
+        <MappingFragment StoreEntitySet="Ou_UserVipPermission">
+          <ScalarProperty Name="vipId" ColumnName="vipId" />
+          <ScalarProperty Name="vipUserId" ColumnName="vipUserId" />
+          <ScalarProperty Name="vipPermission" ColumnName="vipPermission" />
+          <ScalarProperty Name="vipRemark" ColumnName="vipRemark" />
+          <ScalarProperty Name="vipIsDel" ColumnName="vipIsDel" />
+          <ScalarProperty Name="vipAddTime" ColumnName="vipAddTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_AutoTransactNode">
+      <EntityTypeMapping TypeName="MODEL.WF_AutoTransactNode">
+        <MappingFragment StoreEntitySet="WF_AutoTransactNode">
+          <ScalarProperty Name="AutoTransactNodeID" ColumnName="AutoTransactNodeID" />
+          <ScalarProperty Name="WorkFlowNodeID" ColumnName="WorkFlowNodeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_BillFlowNode">
+      <EntityTypeMapping TypeName="MODEL.WF_BillFlowNode">
+        <MappingFragment StoreEntitySet="WF_BillFlowNode">
+          <ScalarProperty Name="BillFlowNodeID" ColumnName="BillFlowNodeID" />
+          <ScalarProperty Name="WorkFlowNodeID" ColumnName="WorkFlowNodeID" />
+          <ScalarProperty Name="NodeStateID" ColumnName="NodeStateID" />
+          <ScalarProperty Name="WorkFlowID" ColumnName="WorkFlowID" />
+          <ScalarProperty Name="BillID" ColumnName="BillID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_BillFlowNodeRemark">
+      <EntityTypeMapping TypeName="MODEL.WF_BillFlowNodeRemark">
+        <MappingFragment StoreEntitySet="WF_BillFlowNodeRemark">
+          <ScalarProperty Name="BillFlowNodeRemarkID" ColumnName="BillFlowNodeRemarkID" />
+          <ScalarProperty Name="BillFlowNodeID" ColumnName="BillFlowNodeID" />
+          <ScalarProperty Name="TransactorID" ColumnName="TransactorID" />
+          <ScalarProperty Name="Transactor" ColumnName="Transactor" />
+          <ScalarProperty Name="TransactorDate" ColumnName="TransactorDate" />
+          <ScalarProperty Name="TransactorOperation" ColumnName="TransactorOperation" />
+          <ScalarProperty Name="TransactorRemark" ColumnName="TransactorRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_BillState">
+      <EntityTypeMapping TypeName="MODEL.WF_BillState">
+        <MappingFragment StoreEntitySet="WF_BillState">
+          <ScalarProperty Name="BillStateID" ColumnName="BillStateID" />
+          <ScalarProperty Name="BillStateName" ColumnName="BillStateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_Node">
+      <EntityTypeMapping TypeName="MODEL.WF_Node">
+        <MappingFragment StoreEntitySet="WF_Node">
+          <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+          <ScalarProperty Name="NodeName" ColumnName="NodeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_NodeState">
+      <EntityTypeMapping TypeName="MODEL.WF_NodeState">
+        <MappingFragment StoreEntitySet="WF_NodeState">
+          <ScalarProperty Name="NodeStateID" ColumnName="NodeStateID" />
+          <ScalarProperty Name="NodeStateName" ColumnName="NodeStateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_WorkFlow">
+      <EntityTypeMapping TypeName="MODEL.WF_WorkFlow">
+        <MappingFragment StoreEntitySet="WF_WorkFlow">
+          <ScalarProperty Name="WorkFlowID" ColumnName="WorkFlowID" />
+          <ScalarProperty Name="WorkFlowName" ColumnName="WorkFlowName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WF_WorkFlowNode">
+      <EntityTypeMapping TypeName="MODEL.WF_WorkFlowNode">
+        <MappingFragment StoreEntitySet="WF_WorkFlowNode">
+          <ScalarProperty Name="WorkFlowNodeID" ColumnName="WorkFlowNodeID" />
+          <ScalarProperty Name="WorkFlowID" ColumnName="WorkFlowID" />
+          <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+          <ScalarProperty Name="WorkFlowNodeSequence" ColumnName="WorkFlowNodeSequence" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

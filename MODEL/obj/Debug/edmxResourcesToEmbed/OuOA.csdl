@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MODEL" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="OuOAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bill_Leave" EntityType="MODEL.Bill_Leave" />
+    <EntitySet Name="Ou_Department" EntityType="MODEL.Ou_Department" />
+    <EntitySet Name="Ou_Permission" EntityType="MODEL.Ou_Permission" />
+    <EntitySet Name="Ou_Role" EntityType="MODEL.Ou_Role" />
+    <EntitySet Name="Ou_RolePermission" EntityType="MODEL.Ou_RolePermission" />
+    <EntitySet Name="Ou_UserInfo" EntityType="MODEL.Ou_UserInfo" />
+    <EntitySet Name="Ou_UserRole" EntityType="MODEL.Ou_UserRole" />
+    <EntitySet Name="Ou_UserVipPermission" EntityType="MODEL.Ou_UserVipPermission" />
+    <EntitySet Name="WF_AutoTransactNode" EntityType="MODEL.WF_AutoTransactNode" />
+    <EntitySet Name="WF_BillFlowNode" EntityType="MODEL.WF_BillFlowNode" />
+    <EntitySet Name="WF_BillFlowNodeRemark" EntityType="MODEL.WF_BillFlowNodeRemark" />
+    <EntitySet Name="WF_BillState" EntityType="MODEL.WF_BillState" />
+    <EntitySet Name="WF_Node" EntityType="MODEL.WF_Node" />
+    <EntitySet Name="WF_NodeState" EntityType="MODEL.WF_NodeState" />
+    <EntitySet Name="WF_WorkFlow" EntityType="MODEL.WF_WorkFlow" />
+    <EntitySet Name="WF_WorkFlowNode" EntityType="MODEL.WF_WorkFlowNode" />
+    <AssociationSet Name="FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE" Association="MODEL.FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE">
+      <End Role="WF_BillState" EntitySet="WF_BillState" />
+      <End Role="Bill_Leave" EntitySet="Bill_Leave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW" Association="MODEL.FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW">
+      <End Role="WF_WorkFlow" EntitySet="WF_WorkFlow" />
+      <End Role="Bill_Leave" EntitySet="Bill_Leave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_Role_Ou_Department" Association="MODEL.FK_Ou_Role_Ou_Department">
+      <End Role="Ou_Department" EntitySet="Ou_Department" />
+      <End Role="Ou_Role" EntitySet="Ou_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_UserInfo_Ou_Department" Association="MODEL.FK_Ou_UserInfo_Ou_Department">
+      <End Role="Ou_Department" EntitySet="Ou_Department" />
+      <End Role="Ou_UserInfo" EntitySet="Ou_UserInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_RolePermission_Ou_Permission" Association="MODEL.FK_Ou_RolePermission_Ou_Permission">
+      <End Role="Ou_Permission" EntitySet="Ou_Permission" />
+      <End Role="Ou_RolePermission" EntitySet="Ou_RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_UserVipPermission_Ou_Permission" Association="MODEL.FK_Ou_UserVipPermission_Ou_Permission">
+      <End Role="Ou_Permission" EntitySet="Ou_Permission" />
+      <End Role="Ou_UserVipPermission" EntitySet="Ou_UserVipPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_RolePermission_Ou_Role" Association="MODEL.FK_Ou_RolePermission_Ou_Role">
+      <End Role="Ou_Role" EntitySet="Ou_Role" />
+      <End Role="Ou_RolePermission" EntitySet="Ou_RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_UserRole_Ou_Role" Association="MODEL.FK_Ou_UserRole_Ou_Role">
+      <End Role="Ou_Role" EntitySet="Ou_Role" />
+      <End Role="Ou_UserRole" EntitySet="Ou_UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_UserRole_Ou_UserInfo" Association="MODEL.FK_Ou_UserRole_Ou_UserInfo">
+      <End Role="Ou_UserInfo" EntitySet="Ou_UserInfo" />
+      <End Role="Ou_UserRole" EntitySet="Ou_UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_UserVipPermission_Ou_UserInfo" Association="MODEL.FK_Ou_UserVipPermission_Ou_UserInfo">
+      <End Role="Ou_UserInfo" EntitySet="Ou_UserInfo" />
+      <End Role="Ou_UserVipPermission" EntitySet="Ou_UserVipPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE" Association="MODEL.FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE">
+      <End Role="WF_WorkFlowNode" EntitySet="WF_WorkFlowNode" />
+      <End Role="WF_AutoTransactNode" EntitySet="WF_AutoTransactNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE" Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE">
+      <End Role="WF_WorkFlowNode" EntitySet="WF_WorkFlowNode" />
+      <End Role="WF_BillFlowNode" EntitySet="WF_BillFlowNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE" Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE">
+      <End Role="WF_NodeState" EntitySet="WF_NodeState" />
+      <End Role="WF_BillFlowNode" EntitySet="WF_BillFlowNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW" Association="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW">
+      <End Role="WF_WorkFlow" EntitySet="WF_WorkFlow" />
+      <End Role="WF_BillFlowNode" EntitySet="WF_BillFlowNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE" Association="MODEL.FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE">
+      <End Role="WF_BillFlowNode" EntitySet="WF_BillFlowNode" />
+      <End Role="WF_BillFlowNodeRemark" EntitySet="WF_BillFlowNodeRemark" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE" Association="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE">
+      <End Role="WF_Node" EntitySet="WF_Node" />
+      <End Role="WF_WorkFlowNode" EntitySet="WF_WorkFlowNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW" Association="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW">
+      <End Role="WF_WorkFlow" EntitySet="WF_WorkFlow" />
+      <End Role="WF_WorkFlowNode" EntitySet="WF_WorkFlowNode" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ou_Department_Ou_Department" Association="MODEL.FK_Ou_Department_Ou_Department">
+      <End Role="Ou_Department" EntitySet="Ou_Department" />
+      <End Role="Ou_Department1" EntitySet="Ou_Department" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bill_Leave">
+    <Key>
+      <PropertyRef Name="Leave" />
+    </Key>
+    <Property Name="Leave" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BeginDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="BillStateID" Type="Int32" />
+    <Property Name="WorkFlowID" Type="Int32" />
+    <NavigationProperty Name="WF_BillState" Relationship="MODEL.FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE" FromRole="Bill_Leave" ToRole="WF_BillState" />
+    <NavigationProperty Name="WF_WorkFlow" Relationship="MODEL.FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW" FromRole="Bill_Leave" ToRole="WF_WorkFlow" />
+  </EntityType>
+  <EntityType Name="Ou_Department">
+    <Key>
+      <PropertyRef Name="depId" />
+    </Key>
+    <Property Name="depId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="depPid" Type="Int32" Nullable="false" />
+    <Property Name="depName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="depRemark" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="depIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="depAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Role" Relationship="MODEL.FK_Ou_Role_Ou_Department" FromRole="Ou_Department" ToRole="Ou_Role" />
+    <NavigationProperty Name="Ou_UserInfo" Relationship="MODEL.FK_Ou_UserInfo_Ou_Department" FromRole="Ou_Department" ToRole="Ou_UserInfo" />
+    <NavigationProperty Name="Ou_DepartmentSons" Relationship="MODEL.FK_Ou_Department_Ou_Department" FromRole="Ou_Department" ToRole="Ou_Department1" />
+    <NavigationProperty Name="Ou_DepartmentParent" Relationship="MODEL.FK_Ou_Department_Ou_Department" FromRole="Ou_Department1" ToRole="Ou_Department" />
+  </EntityType>
+  <EntityType Name="Ou_Permission">
+    <Key>
+      <PropertyRef Name="pid" />
+    </Key>
+    <Property Name="pid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pParent" Type="Int32" Nullable="false" />
+    <Property Name="pName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pAreaName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pControllerName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pActionName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="pFormMethod" Type="Int16" Nullable="false" />
+    <Property Name="pOperationType" Type="Int16" Nullable="false" />
+    <Property Name="pIco" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="pOrder" Type="Int32" Nullable="false" />
+    <Property Name="pIsLink" Type="Boolean" Nullable="false" />
+    <Property Name="pLinkUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="pIsShow" Type="Boolean" Nullable="false" />
+    <Property Name="pRemark" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="pIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="pAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_RolePermission" Relationship="MODEL.FK_Ou_RolePermission_Ou_Permission" FromRole="Ou_Permission" ToRole="Ou_RolePermission" />
+    <NavigationProperty Name="Ou_UserVipPermission" Relationship="MODEL.FK_Ou_UserVipPermission_Ou_Permission" FromRole="Ou_Permission" ToRole="Ou_UserVipPermission" />
+  </EntityType>
+  <EntityType Name="Ou_Role">
+    <Key>
+      <PropertyRef Name="rId" />
+    </Key>
+    <Property Name="rId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rDepId" Type="Int32" Nullable="false" />
+    <Property Name="rName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="rRemark" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="rIsShow" Type="Boolean" Nullable="false" />
+    <Property Name="rIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="rAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Department" Relationship="MODEL.FK_Ou_Role_Ou_Department" FromRole="Ou_Role" ToRole="Ou_Department" />
+    <NavigationProperty Name="Ou_RolePermission" Relationship="MODEL.FK_Ou_RolePermission_Ou_Role" FromRole="Ou_Role" ToRole="Ou_RolePermission" />
+    <NavigationProperty Name="Ou_UserRole" Relationship="MODEL.FK_Ou_UserRole_Ou_Role" FromRole="Ou_Role" ToRole="Ou_UserRole" />
+  </EntityType>
+  <EntityType Name="Ou_RolePermission">
+    <Key>
+      <PropertyRef Name="rpId" />
+    </Key>
+    <Property Name="rpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rpRId" Type="Int32" Nullable="false" />
+    <Property Name="rpPId" Type="Int32" Nullable="false" />
+    <Property Name="rpIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="rpAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Permission" Relationship="MODEL.FK_Ou_RolePermission_Ou_Permission" FromRole="Ou_RolePermission" ToRole="Ou_Permission" />
+    <NavigationProperty Name="Ou_Role" Relationship="MODEL.FK_Ou_RolePermission_Ou_Role" FromRole="Ou_RolePermission" ToRole="Ou_Role" />
+  </EntityType>
+  <EntityType Name="Ou_UserInfo">
+    <Key>
+      <PropertyRef Name="uId" />
+    </Key>
+    <Property Name="uId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uDepId" Type="Int32" Nullable="false" />
+    <Property Name="uLoginName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="uPwd" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+    <Property Name="uGender" Type="Boolean" Nullable="false" />
+    <Property Name="uPost" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="uRemark" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="uIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="uAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Department" Relationship="MODEL.FK_Ou_UserInfo_Ou_Department" FromRole="Ou_UserInfo" ToRole="Ou_Department" />
+    <NavigationProperty Name="Ou_UserRole" Relationship="MODEL.FK_Ou_UserRole_Ou_UserInfo" FromRole="Ou_UserInfo" ToRole="Ou_UserRole" />
+    <NavigationProperty Name="Ou_UserVipPermission" Relationship="MODEL.FK_Ou_UserVipPermission_Ou_UserInfo" FromRole="Ou_UserInfo" ToRole="Ou_UserVipPermission" />
+  </EntityType>
+  <EntityType Name="Ou_UserRole">
+    <Key>
+      <PropertyRef Name="urId" />
+    </Key>
+    <Property Name="urId" Type="Int32" Nullable="false" />
+    <Property Name="urUId" Type="Int32" Nullable="false" />
+    <Property Name="urRId" Type="Int32" Nullable="false" />
+    <Property Name="urIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="urAddtime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Role" Relationship="MODEL.FK_Ou_UserRole_Ou_Role" FromRole="Ou_UserRole" ToRole="Ou_Role" />
+    <NavigationProperty Name="Ou_UserInfo" Relationship="MODEL.FK_Ou_UserRole_Ou_UserInfo" FromRole="Ou_UserRole" ToRole="Ou_UserInfo" />
+  </EntityType>
+  <EntityType Name="Ou_UserVipPermission">
+    <Key>
+      <PropertyRef Name="vipId" />
+    </Key>
+    <Property Name="vipId" Type="Int32" Nullable="false" />
+    <Property Name="vipUserId" Type="Int32" Nullable="false" />
+    <Property Name="vipPermission" Type="Int32" Nullable="false" />
+    <Property Name="vipRemark" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="vipIsDel" Type="Boolean" Nullable="false" />
+    <Property Name="vipAddTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Ou_Permission" Relationship="MODEL.FK_Ou_UserVipPermission_Ou_Permission" FromRole="Ou_UserVipPermission" ToRole="Ou_Permission" />
+    <NavigationProperty Name="Ou_UserInfo" Relationship="MODEL.FK_Ou_UserVipPermission_Ou_UserInfo" FromRole="Ou_UserVipPermission" ToRole="Ou_UserInfo" />
+  </EntityType>
+  <EntityType Name="WF_AutoTransactNode">
+    <Key>
+      <PropertyRef Name="AutoTransactNodeID" />
+    </Key>
+    <Property Name="AutoTransactNodeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkFlowNodeID" Type="Int32" />
+    <NavigationProperty Name="WF_WorkFlowNode" Relationship="MODEL.FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE" FromRole="WF_AutoTransactNode" ToRole="WF_WorkFlowNode" />
+  </EntityType>
+  <EntityType Name="WF_BillFlowNode">
+    <Key>
+      <PropertyRef Name="BillFlowNodeID" />
+    </Key>
+    <Property Name="BillFlowNodeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkFlowNodeID" Type="Int32" />
+    <Property Name="NodeStateID" Type="Int32" />
+    <Property Name="WorkFlowID" Type="Int32" />
+    <Property Name="BillID" Type="Int32" />
+    <NavigationProperty Name="WF_WorkFlowNode" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE" FromRole="WF_BillFlowNode" ToRole="WF_WorkFlowNode" />
+    <NavigationProperty Name="WF_NodeState" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE" FromRole="WF_BillFlowNode" ToRole="WF_NodeState" />
+    <NavigationProperty Name="WF_WorkFlow" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW" FromRole="WF_BillFlowNode" ToRole="WF_WorkFlow" />
+    <NavigationProperty Name="WF_BillFlowNodeRemark" Relationship="MODEL.FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE" FromRole="WF_BillFlowNode" ToRole="WF_BillFlowNodeRemark" />
+  </EntityType>
+  <EntityType Name="WF_BillFlowNodeRemark">
+    <Key>
+      <PropertyRef Name="BillFlowNodeRemarkID" />
+    </Key>
+    <Property Name="BillFlowNodeRemarkID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BillFlowNodeID" Type="Int32" />
+    <Property Name="TransactorID" Type="Int32" />
+    <Property Name="Transactor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TransactorDate" Type="DateTime" Precision="3" />
+    <Property Name="TransactorOperation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TransactorRemark" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="WF_BillFlowNode" Relationship="MODEL.FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE" FromRole="WF_BillFlowNodeRemark" ToRole="WF_BillFlowNode" />
+  </EntityType>
+  <EntityType Name="WF_BillState">
+    <Key>
+      <PropertyRef Name="BillStateID" />
+    </Key>
+    <Property Name="BillStateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BillStateName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Bill_Leave" Relationship="MODEL.FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE" FromRole="WF_BillState" ToRole="Bill_Leave" />
+  </EntityType>
+  <EntityType Name="WF_Node">
+    <Key>
+      <PropertyRef Name="NodeID" />
+    </Key>
+    <Property Name="NodeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NodeName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="WF_WorkFlowNode" Relationship="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE" FromRole="WF_Node" ToRole="WF_WorkFlowNode" />
+  </EntityType>
+  <EntityType Name="WF_NodeState">
+    <Key>
+      <PropertyRef Name="NodeStateID" />
+    </Key>
+    <Property Name="NodeStateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NodeStateName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="WF_BillFlowNode" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE" FromRole="WF_NodeState" ToRole="WF_BillFlowNode" />
+  </EntityType>
+  <EntityType Name="WF_WorkFlow">
+    <Key>
+      <PropertyRef Name="WorkFlowID" />
+    </Key>
+    <Property Name="WorkFlowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkFlowName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Bill_Leave" Relationship="MODEL.FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW" FromRole="WF_WorkFlow" ToRole="Bill_Leave" />
+    <NavigationProperty Name="WF_BillFlowNode" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW" FromRole="WF_WorkFlow" ToRole="WF_BillFlowNode" />
+    <NavigationProperty Name="WF_WorkFlowNode" Relationship="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW" FromRole="WF_WorkFlow" ToRole="WF_WorkFlowNode" />
+  </EntityType>
+  <EntityType Name="WF_WorkFlowNode">
+    <Key>
+      <PropertyRef Name="WorkFlowNodeID" />
+    </Key>
+    <Property Name="WorkFlowNodeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkFlowID" Type="Int32" />
+    <Property Name="NodeID" Type="Int32" />
+    <Property Name="WorkFlowNodeSequence" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="WF_AutoTransactNode" Relationship="MODEL.FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE" FromRole="WF_WorkFlowNode" ToRole="WF_AutoTransactNode" />
+    <NavigationProperty Name="WF_BillFlowNode" Relationship="MODEL.FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE" FromRole="WF_WorkFlowNode" ToRole="WF_BillFlowNode" />
+    <NavigationProperty Name="WF_Node" Relationship="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE" FromRole="WF_WorkFlowNode" ToRole="WF_Node" />
+    <NavigationProperty Name="WF_WorkFlow" Relationship="MODEL.FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW" FromRole="WF_WorkFlowNode" ToRole="WF_WorkFlow" />
+  </EntityType>
+  <Association Name="FK_BILL_LEAVE_REFERENCE_10_WF_BILLSTATE">
+    <End Role="WF_BillState" Type="MODEL.WF_BillState" Multiplicity="0..1" />
+    <End Role="Bill_Leave" Type="MODEL.Bill_Leave" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_BillState">
+        <PropertyRef Name="BillStateID" />
+      </Principal>
+      <Dependent Role="Bill_Leave">
+        <PropertyRef Name="BillStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BILL_LEAVE_REFERENCE_11_WF_WORKFLOW">
+    <End Role="WF_WorkFlow" Type="MODEL.WF_WorkFlow" Multiplicity="0..1" />
+    <End Role="Bill_Leave" Type="MODEL.Bill_Leave" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WorkFlow">
+        <PropertyRef Name="WorkFlowID" />
+      </Principal>
+      <Dependent Role="Bill_Leave">
+        <PropertyRef Name="WorkFlowID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_Role_Ou_Department">
+    <End Role="Ou_Department" Type="MODEL.Ou_Department" Multiplicity="1" />
+    <End Role="Ou_Role" Type="MODEL.Ou_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Department">
+        <PropertyRef Name="depId" />
+      </Principal>
+      <Dependent Role="Ou_Role">
+        <PropertyRef Name="rDepId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_UserInfo_Ou_Department">
+    <End Role="Ou_Department" Type="MODEL.Ou_Department" Multiplicity="1" />
+    <End Role="Ou_UserInfo" Type="MODEL.Ou_UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Department">
+        <PropertyRef Name="depId" />
+      </Principal>
+      <Dependent Role="Ou_UserInfo">
+        <PropertyRef Name="uDepId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_RolePermission_Ou_Permission">
+    <End Role="Ou_Permission" Type="MODEL.Ou_Permission" Multiplicity="1" />
+    <End Role="Ou_RolePermission" Type="MODEL.Ou_RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Permission">
+        <PropertyRef Name="pid" />
+      </Principal>
+      <Dependent Role="Ou_RolePermission">
+        <PropertyRef Name="rpPId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_UserVipPermission_Ou_Permission">
+    <End Role="Ou_Permission" Type="MODEL.Ou_Permission" Multiplicity="1" />
+    <End Role="Ou_UserVipPermission" Type="MODEL.Ou_UserVipPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Permission">
+        <PropertyRef Name="pid" />
+      </Principal>
+      <Dependent Role="Ou_UserVipPermission">
+        <PropertyRef Name="vipPermission" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_RolePermission_Ou_Role">
+    <End Role="Ou_Role" Type="MODEL.Ou_Role" Multiplicity="1" />
+    <End Role="Ou_RolePermission" Type="MODEL.Ou_RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Role">
+        <PropertyRef Name="rId" />
+      </Principal>
+      <Dependent Role="Ou_RolePermission">
+        <PropertyRef Name="rpRId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_UserRole_Ou_Role">
+    <End Role="Ou_Role" Type="MODEL.Ou_Role" Multiplicity="1" />
+    <End Role="Ou_UserRole" Type="MODEL.Ou_UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Role">
+        <PropertyRef Name="rId" />
+      </Principal>
+      <Dependent Role="Ou_UserRole">
+        <PropertyRef Name="urRId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_UserRole_Ou_UserInfo">
+    <End Role="Ou_UserInfo" Type="MODEL.Ou_UserInfo" Multiplicity="1" />
+    <End Role="Ou_UserRole" Type="MODEL.Ou_UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_UserInfo">
+        <PropertyRef Name="uId" />
+      </Principal>
+      <Dependent Role="Ou_UserRole">
+        <PropertyRef Name="urUId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_UserVipPermission_Ou_UserInfo">
+    <End Role="Ou_UserInfo" Type="MODEL.Ou_UserInfo" Multiplicity="1" />
+    <End Role="Ou_UserVipPermission" Type="MODEL.Ou_UserVipPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_UserInfo">
+        <PropertyRef Name="uId" />
+      </Principal>
+      <Dependent Role="Ou_UserVipPermission">
+        <PropertyRef Name="vipUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_AUTOTRANSACTNOD_REFERENCE_4_WF_WORKFLOWNODE">
+    <End Role="WF_WorkFlowNode" Type="MODEL.WF_WorkFlowNode" Multiplicity="0..1" />
+    <End Role="WF_AutoTransactNode" Type="MODEL.WF_AutoTransactNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WorkFlowNode">
+        <PropertyRef Name="WorkFlowNodeID" />
+      </Principal>
+      <Dependent Role="WF_AutoTransactNode">
+        <PropertyRef Name="WorkFlowNodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_BILLFLOWNODE_REFERENCE_6_WF_WORKFLOWNODE">
+    <End Role="WF_WorkFlowNode" Type="MODEL.WF_WorkFlowNode" Multiplicity="0..1" />
+    <End Role="WF_BillFlowNode" Type="MODEL.WF_BillFlowNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WorkFlowNode">
+        <PropertyRef Name="WorkFlowNodeID" />
+      </Principal>
+      <Dependent Role="WF_BillFlowNode">
+        <PropertyRef Name="WorkFlowNodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_BILLFLOWNODE_REFERENCE_7_WF_NODESTATE">
+    <End Role="WF_NodeState" Type="MODEL.WF_NodeState" Multiplicity="0..1" />
+    <End Role="WF_BillFlowNode" Type="MODEL.WF_BillFlowNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_NodeState">
+        <PropertyRef Name="NodeStateID" />
+      </Principal>
+      <Dependent Role="WF_BillFlowNode">
+        <PropertyRef Name="NodeStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_BILLFLOWNODE_REFERENCE_8_WF_WORKFLOW">
+    <End Role="WF_WorkFlow" Type="MODEL.WF_WorkFlow" Multiplicity="0..1" />
+    <End Role="WF_BillFlowNode" Type="MODEL.WF_BillFlowNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WorkFlow">
+        <PropertyRef Name="WorkFlowID" />
+      </Principal>
+      <Dependent Role="WF_BillFlowNode">
+        <PropertyRef Name="WorkFlowID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_BILLFLOWNODEREM_REFERENCE_9_WF_BILLFLOWNODE">
+    <End Role="WF_BillFlowNode" Type="MODEL.WF_BillFlowNode" Multiplicity="0..1" />
+    <End Role="WF_BillFlowNodeRemark" Type="MODEL.WF_BillFlowNodeRemark" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_BillFlowNode">
+        <PropertyRef Name="BillFlowNodeID" />
+      </Principal>
+      <Dependent Role="WF_BillFlowNodeRemark">
+        <PropertyRef Name="BillFlowNodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_WORKFLOWNODE_REFERENCE_3_WF_NODE">
+    <End Role="WF_Node" Type="MODEL.WF_Node" Multiplicity="0..1" />
+    <End Role="WF_WorkFlowNode" Type="MODEL.WF_WorkFlowNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_Node">
+        <PropertyRef Name="NodeID" />
+      </Principal>
+      <Dependent Role="WF_WorkFlowNode">
+        <PropertyRef Name="NodeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WF_WORKFLOWNODE_REFERENCE_2_WF_WORKFLOW">
+    <End Role="WF_WorkFlow" Type="MODEL.WF_WorkFlow" Multiplicity="0..1" />
+    <End Role="WF_WorkFlowNode" Type="MODEL.WF_WorkFlowNode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WF_WorkFlow">
+        <PropertyRef Name="WorkFlowID" />
+      </Principal>
+      <Dependent Role="WF_WorkFlowNode">
+        <PropertyRef Name="WorkFlowID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ou_Department_Ou_Department">
+    <End Type="MODEL.Ou_Department" Role="Ou_Department" Multiplicity="1" />
+    <End Type="MODEL.Ou_Department" Role="Ou_Department1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ou_Department">
+        <PropertyRef Name="depId" />
+      </Principal>
+      <Dependent Role="Ou_Department1">
+        <PropertyRef Name="depPid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

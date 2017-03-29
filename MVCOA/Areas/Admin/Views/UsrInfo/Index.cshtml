@@ -1,0 +1,195 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户管理</title>
+    <link href="~/EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="~/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#winPers').window('close');
+            $("#tbList").datagrid({
+                width: 'auto',
+                height: 'auto',
+                fitColumns: true,
+                striped: true,
+                singleSelect: true,
+                url: '/admin/UsrInfo/Index',
+                loadMsg: '数据加载中请稍后……',
+                pagination: true,//启用分页，默认每页10行
+                rownumbers: true,//显示页码，默认 提供 10 - 50 的页容量选择下拉框
+                pageSize: 5,//设置 页容量为 5
+                pageList: [5, 10,20,30],//设置 页容量下拉框
+                columns: [[
+                    {
+                        field: 'uId', title: 'ID', width: 20
+                    },
+                    {
+                        field: 'Ou_Department', title: '父部门', width: 100, formatter: function (value) {
+                            if (value)
+                                return value.depName;
+                        }
+                    },
+                    { field: 'uLoginName', title: '登录名', width: 100 },
+                    {
+                        field: 'uGender', title: '性别', formatter: function (val) {
+                            return val ? "男" : "女";
+                        }
+                    }
+                ]],
+                toolbar: [{
+                    iconCls: 'icon-add',
+                    text: "新增",
+                    handler: addRow
+                }, '-', {
+                    iconCls: 'icon-remove',
+                    text: "删除",
+                    handler: removeRow
+                }, '-', {
+                    iconCls: 'icon-edit',
+                    text: "编辑",
+                    handler: editRow
+                }, '-', {
+                    iconCls: 'icon-edit',
+                    text: "分配部门角色",
+                    handler: setDepRole
+                }],
+                onSelect: function (rowI, rowD) {
+                    selectedRowIndex = rowI;//将选中行的下标 设置给全局变量
+                }
+            });
+        })
+
+        //选中行的下标
+        var selectedRowIndex = -1;
+
+        //编辑按钮方法
+        function editRow() {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $('#editWindow').window('open');
+                //异步请求 权限修改页面，并直接加载到 当前的 修改窗体中
+                //$("#editWindow").load("/admin/sys/editpermission/" + rowData.pid, function (jsonData) {
+                //    alert("加载~！" + jsonData.Statu);
+                //});
+                $.get("/admin/sys/editpermission/" + rowData.pid, null, function (jsonObj) {
+                    if (jsonObj.Statu)
+                        $.procAjaxData(jsonObj);
+                    else
+                        $("#editWindow").html(jsonObj);
+
+                });
+            }
+        }
+
+        //新增按钮方法
+        function addRow() {
+            $('#editWindow').window('open');
+            //$("#editWindow").load("/admin/sys/addpermission/");
+            $.get("/admin/sys/addpermission/", null, function (jsonObj) {
+                if (jsonObj.Statu)
+                    $.procAjaxData(jsonObj);
+                else
+                    $("#editWindow").html(jsonObj);
+
+            });
+        }
+
+        //删除方法
+        function removeRow() {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $.post("/admin/sys/delpemission", "id=" + rowData.pid, function (jsonObj) {
+                    $.procAjaxData(jsonObj, function () {
+                        $("#tbList").datagrid("reload");//删除成功后 刷新页面
+                    });
+                }, "JSON");
+            }
+        }
+
+        //当前选中的用户数据
+        var usrData = null;
+        //设置部门权限
+        function setDepRole()
+        {
+            //获取选中行里的数据
+            usrData = $("#tbList").datagrid("getSelected");
+            if (usrData) {
+                $("#selDep").combobox();
+                $("#selRole").combobox({multiple: true});
+                //1.请求部门下拉框数据
+                $("#selDep").combobox({
+                    url: '/admin/Department/GetAllDepart',
+                    valueField: 'depId',
+                    textField: 'depName',
+                    method: "get",
+                    onSelect: getDepRoles
+                });
+                $('#winPers').window('open');
+            }
+        }
+        var nowDepId = -1;
+        //根据部门加载 部门角色
+        function getDepRoles(optionData)
+        {
+            if (optionData == null) return;
+            nowDepId = optionData.depId;//保存部门id
+            $("#selRole").combobox({
+                url: '/admin/Role/GetRoleByDepId/' + optionData.depId,
+                valueField: 'rId',
+                textField: 'rName',
+                method: "get",
+                onLoadSuccess: function () {
+                    //alert("数据加载完毕~！!!!!!!!!!!!!!!!!!");
+                    setTimeout(function () {
+                        var firstValue = $("#selRole").combobox("getData")[0].rId;
+                        $("#selRole").combobox("select", firstValue);
+                    }, 100);
+                    
+                }
+            });
+        }
+
+        //保存用户角色（每个用户只有一个角色）
+        function SaveRoles()
+        {
+            var arr = $("#selRole").combobox("getValues");
+            var rIds = "";
+            for (var i = 0; i < arr.length; i++) {
+                rIds += arr[i] + ",";
+            }
+            if (!arr || arr.length == 0) return;     //?depid=1&rids=1,2,3
+            $.post("/admin/Department/SetUserRole", { "uId": usrData.uId, "depid": nowDepId, "rIds": rIds }, function (jsonData) {
+                $('#winPers').window('close');
+                $.procAjaxData(jsonData);
+            });
+        }
+    </script>
+</head>
+<body>
+    <table id="tbList" style="width:400px;height:250px">
+    </table>
+    
+    <div id="winPers" class="easyui-window" title="设置部门权限" style="width:450px; height:120px;"   
+        data-options="iconCls:'icon-save',modal:true">
+        <div class="easyui-layout" data-options="fit:true">
+			<div id="treeArea" data-options="region:'center'" style="padding:10px;">
+				部门：<input id="selDep" name="selDep">
+				角色：<input id="selRole" name="selRole">
+			</div>
+			<div data-options="region:'south',border:false" style="text-align:right;padding:5px;">
+				<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="SaveRoles()">保存</a>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Login.Admin.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Login.Admin.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Login.Admin.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Login.Admin.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA.Login.Admin\obj\Debug\MVCOA.Login.Admin.pdb

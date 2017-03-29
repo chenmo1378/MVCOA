@@ -1,0 +1,115 @@
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Antlr3.Runtime.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\EntityFramework.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Microsoft.Web.Infrastructure.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MODEL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Newtonsoft.Json.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.Formatting.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.WebRequest.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Http.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Http.WebHost.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Mvc.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Providers.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Razor.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.Deployment.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.Razor.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\WebGrease.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MODEL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\EntityFramework.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Newtonsoft.Json.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.Formatting.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Net.Http.WebRequest.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Http.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Http.WebHost.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Mvc.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.Razor.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.Deployment.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\System.Web.WebPages.Razor.xml
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\EntityFramework.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.Http.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.Providers.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\obj\Debug\MVCOA.csprojResolveAssemblyReference.cache
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\obj\Debug\MVCOA.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\obj\Debug\MVCOA.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\DI.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\IBLL.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Spring.Core.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Common.Logging.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Logic.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\DI.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\IBLL.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Helper.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Helper.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\MVCOA.Login.Admin.pdb
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Common.dll
+F:\03广州传智.Net上课视频\DotNet04四期\上课视频\2013-06-99-MVCOA\MVCOA\MVCOA\MVCOA\bin\Common.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Microsoft.Web.Infrastructure.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MODEL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.Formatting.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.WebRequest.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Http.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Http.WebHost.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Mvc.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Razor.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.Deployment.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.Razor.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\EntityFramework.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Helper.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\IBLL.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Common.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\DI.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Spring.Core.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Common.Logging.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MODEL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Logic.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Login.Admin.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Microsoft.Web.Infrastructure.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Newtonsoft.Json.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.Formatting.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Net.Http.WebRequest.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Http.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Http.WebHost.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Mvc.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.Razor.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.Deployment.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\System.Web.WebPages.Razor.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\EntityFramework.xml
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\MVCOA.Helper.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\IBLL.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\Common.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\DI.pdb
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.Http.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.Providers.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\bin\zh-Hans\EntityFramework.resources.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\obj\Debug\MVCOA.csprojResolveAssemblyReference.cache
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\obj\Debug\MVCOA.dll
+G:\视频资料\2013-06-10 MVCOA工作流\MVCOA\MVCOA\obj\Debug\MVCOA.pdb

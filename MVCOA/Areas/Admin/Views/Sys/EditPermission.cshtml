@@ -1,0 +1,77 @@
+﻿@model MODEL.ViewModel.Permission
+
+@*<script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>*@
+<script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<style type="text/css">
+    #modifyTb {
+        width: 400px;
+        border: 1px solid #0094ff;
+        margin: 10px auto;
+        border-collapse: collapse;
+    }
+
+    #modifyTb td, #modifyTb th {
+        border: 1px solid #0094ff;
+        padding: 4px;
+    }
+</style>
+@using(Html.BeginForm()){//BeginForm方法 如果没有通过参数 设置 提交的路径，那么就会直接拿当前访问的路径 当 action
+@Html.HiddenFor(model => model.pid)
+<table id="modifyTb">
+    <tr>
+        <td>父菜单：</td>
+        <td colspan="2">@Html.Raw(ViewBag.ParentMenuHtml)</td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">@Html.LabelFor(model => model.pName)</td>
+        <td style="width: 30%;">@Html.TextBoxFor(model => model.pName)</td>
+        <td>@Html.ValidationMessageFor(model => model.pName)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pAreaName)</td>
+        <td>@Html.TextBoxFor(model => model.pAreaName)</td>
+        <td>@Html.ValidationMessageFor(model => model.pAreaName)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pControllerName)</td>
+        <td>@Html.TextBoxFor(model => model.pControllerName)</td>
+        <td>@Html.ValidationMessageFor(model => model.pControllerName)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pActionName)</td>
+        <td>@Html.TextBoxFor(model => model.pActionName)</td>
+        <td>@Html.ValidationMessageFor(model => model.pActionName)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pFormMethod)</td>
+        <td>@Html.DropDownListFor(model => model.pFormMethod, ViewBag.httpMethodList as IEnumerable<SelectListItem>)</td>
+        <td>@Html.ValidationMessageFor(model => model.pFormMethod)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pOperationType)</td>
+        <td>@Html.DropDownListFor(model => model.pOperationType, ViewBag.operationList as IEnumerable<SelectListItem>)</td>
+        <td>@Html.ValidationMessageFor(model => model.pOperationType)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pOrder)</td>
+        <td>@Html.TextBoxFor(model => model.pOrder)</td>
+        <td>@Html.ValidationMessageFor(model => model.pOrder)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pIsShow)</td>
+        <td>@Html.EditorFor(model => model.pIsShow)</td>
+        <td>@Html.ValidationMessageFor(model => model.pIsShow)</td>
+    </tr>
+    <tr>
+        <td>@Html.LabelFor(model => model.pRemark)</td>
+        <td>@Html.TextBoxFor(model => model.pRemark)</td>
+        <td>@Html.ValidationMessageFor(model => model.pRemark)</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <input type="submit" value="保存" /></td>
+    </tr>
+</table>
+}

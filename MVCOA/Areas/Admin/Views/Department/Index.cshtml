@@ -1,0 +1,128 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>部门管理</title>
+    <link href="~/EasyUI/themes/icon.css" rel="stylesheet" />
+    <link href="~/EasyUI/themes/default/easyui.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="~/EasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.msgProcess.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#winPers').window('close');
+            $("#tbList").datagrid({
+                width: 'auto',
+                height: 'auto',
+                fitColumns: true,
+                striped: true,
+                singleSelect: true,
+                url: '/admin/department/Index',
+                loadMsg: '数据加载中请稍后……',
+                pagination: true,//启用分页，默认每页10行
+                rownumbers: true,//显示页码，默认 提供 10 - 50 的页容量选择下拉框
+                pageSize: 5,//设置 页容量为 5
+                pageList: [5, 10,20,30],//设置 页容量下拉框
+                columns: [[
+                    {
+                        field: 'depId', title: 'ID', width: 20
+                    },
+                    {
+                        field: 'Ou_DepartmentParent', title: '父部门', width: 100, formatter: function (value) {
+                            if (value)
+                                return value.depName;
+                        }
+                    },
+                    { field: 'depName', title: '部门名称', width: 100 },
+                    { field: 'depRemark', title: '备注'}
+                ]],
+                toolbar: [{
+                    iconCls: 'icon-add',
+                    text: "新增",
+                    handler: addRow
+                }, '-', {
+                    iconCls: 'icon-remove',
+                    text: "删除",
+                    handler: removeRow
+                }, '-', {
+                    iconCls: 'icon-edit',
+                    text: "编辑",
+                    handler: editRow
+                }],
+                onSelect: function (rowI, rowD) {
+                    selectedRowIndex = rowI;//将选中行的下标 设置给全局变量
+                }
+            });
+        })
+
+        //选中行的下标
+        var selectedRowIndex = -1;
+
+        //编辑按钮方法
+        function editRow() {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $('#editWindow').window('open');
+                //异步请求 权限修改页面，并直接加载到 当前的 修改窗体中
+                //$("#editWindow").load("/admin/sys/editpermission/" + rowData.pid, function (jsonData) {
+                //    alert("加载~！" + jsonData.Statu);
+                //});
+                $.get("/admin/sys/editpermission/" + rowData.pid, null, function (jsonObj) {
+                    if (jsonObj.Statu)
+                        $.procAjaxData(jsonObj);
+                    else
+                        $("#editWindow").html(jsonObj);
+
+                });
+            }
+        }
+
+        //新增按钮方法
+        function addRow() {
+            $('#editWindow').window('open');
+            //$("#editWindow").load("/admin/sys/addpermission/");
+            $.get("/admin/sys/addpermission/", null, function (jsonObj) {
+                if (jsonObj.Statu)
+                    $.procAjaxData(jsonObj);
+                else
+                    $("#editWindow").html(jsonObj);
+
+            });
+        }
+
+        //删除方法
+        function removeRow() {
+            //获取选中行里的数据！
+            var rowData = $("#tbList").datagrid("getSelected");
+            if (rowData) {
+                $.post("/admin/sys/delpemission", "id=" + rowData.pid, function (jsonObj) {
+                    $.procAjaxData(jsonObj, function () {
+                        $("#tbList").datagrid("reload");//删除成功后 刷新页面
+                    });
+                }, "JSON");
+            }
+        }
+    </script>
+</head>
+<body>
+    <table id="tbList" style="width:400px;height:250px">
+    </table>
+    
+    <div id="winPers" class="easyui-window" title="分配权限" style="width:600px; height:300px;"   
+        data-options="iconCls:'icon-save',modal:true">
+        <div class="easyui-layout" data-options="fit:true">
+			<div id="treeArea" data-options="region:'center'" style="padding:10px;">
+				
+			</div>
+			<div data-options="region:'south',border:false" style="text-align:right;padding:5px;">
+				<a class="easyui-linkbutton" data-options="iconCls:'icon-ok'" href="javascript:void(0)" onclick="SaveNewPermission()">保存</a>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
